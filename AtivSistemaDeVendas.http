@@ -1,0 +1,6 @@
+@AtivSistemaDeVendas_HostAddress = http://localhost:5110
+
+GET {{AtivSistemaDeVendas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
