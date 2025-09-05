@@ -25,9 +25,9 @@ namespace AtivSistemaDeVendas.Data.Map
                    .IsRequired();
 
             // Um usuário pode ter vários pedidos
-            builder.HasMany(u => u.Pedidos)
-                   .WithOne(p => p.Usuario)
-                   .HasForeignKey(p => p.UsuarioId);
+            //builder.HasMany(u => u.Pedidos)
+            //.WithOne(p => p.Usuario)
+            //.HasForeignKey(p => p.UsuarioId);
         }
     }
 }

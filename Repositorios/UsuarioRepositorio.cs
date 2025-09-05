@@ -50,4 +50,9 @@ public class UsuarioRepositorio : IUsuarioRepositorio
         await _dbContext.SaveChangesAsync();
         return true;
     }
+
+    public Task<UsuarioModel?> BuscarPorEmailESenha(string email, string senha)
+    {
+        throw new NotImplementedException();
+    }
 }

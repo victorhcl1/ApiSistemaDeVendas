@@ -11,6 +11,6 @@ namespace AtivSistemaDeVendas.Models
         public string Senha { get; set; } = string.Empty;
 
         // Relacionamento 1:N -> Um usuário pode ter vários pedidos
-        public ICollection<PedidoModel> Pedidos { get; set; } = new List<PedidoModel>();
+        //public ICollection<PedidoModel> Pedidos { get; set; } = new List<PedidoModel>();
     }
 }

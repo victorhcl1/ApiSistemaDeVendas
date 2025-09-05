@@ -1,6 +1,8 @@
 ﻿using AtivSistemaDeVendas.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization; // Adicione este using
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class CategoriaController : ControllerBase

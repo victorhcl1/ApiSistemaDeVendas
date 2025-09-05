@@ -24,9 +24,9 @@ namespace AtivSistemaDeVendas.Data.Map
                    .IsRequired()
                    .HasMaxLength(50);
 
-            builder.HasOne(p => p.Usuario)
-                   .WithMany(u => u.Pedidos)
-                   .HasForeignKey(p => p.UsuarioId);
+            //builder.HasOne(p => p.Usuario)
+            //.WithMany(u => u.Pedidos)
+            //.HasForeignKey(p => p.UsuarioId);
 
             // Pedido possui vários itens (Produtos através da tabela intermediária)
             builder.HasMany(p => p.PedidosProdutos)
